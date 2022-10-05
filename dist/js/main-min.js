@@ -1,0 +1,1 @@
+const one=200,two=100;
