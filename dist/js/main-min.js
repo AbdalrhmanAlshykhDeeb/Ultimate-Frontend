@@ -1,1 +1,1 @@
-const one=200,two=100;
+let btn=document.getElementById("toggle-sidebar"),aside=document.getElementById("sidebar"),asideH=document.getElementById("content-area");btn.onclick=function(){aside.classList.toggle("no-sidebar"),asideH.classList.toggle("no-sidebar")};

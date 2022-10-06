@@ -10,9 +10,9 @@ html(dir="ltr" lang="en")
    body 
       .page.home-page 
          include pug/layout/sidebar 
-         .content-area 
-            | content
-            h1 #{pageTitle}
-            p test github
-            p jlbcobaobouacoug
-            p estjß˚bczb
+         .content-area#content-area
+            include pug/layout/header
+            .content    
+               h1 #{pageTitle}
+      include pug/layout/script
+      

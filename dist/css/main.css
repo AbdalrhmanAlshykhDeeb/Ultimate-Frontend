@@ -18,6 +18,9 @@ body {
   will-change: width;
   float: right;
 }
+.page .content-area.no-sidebar {
+  width: 100%;
+}
 
 .page .sidebar {
   width: 250px;
@@ -29,5 +32,12 @@ body {
   padding: 15px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+.page .sidebar.no-sidebar {
+  left: -250px;
+}
+
+.header i.toggle-sidebar {
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
