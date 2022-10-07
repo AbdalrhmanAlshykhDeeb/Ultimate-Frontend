@@ -7,3 +7,14 @@ btn.onclick = function () {
   aside.classList.toggle("no-sidebar");
   asideH.classList.toggle("no-sidebar");
 };
+
+let toggle = document.getElementById("toggle-submenue-icon");
+let toggleMisc = document.getElementById("toggle-misc");
+
+toggle.onclick = function () {
+  toggle.classList.toggle("fa-angle-down");
+};
+
+toggleMisc.onclick = () => {
+  toggleMisc.classList.toggle("fa-angle-down");
+};

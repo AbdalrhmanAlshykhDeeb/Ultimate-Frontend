@@ -4,21 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../../dist/css/main.css">
-    <link rel="stylesheet" href="css/all.min.css">
     <title>Homepage</title>
+    <link rel="stylesheet" href="/dist/css/main.css">
+    <link rel="stylesheet" href="/dist/css/all.min.css">
+    <link rel="stylesheet" href="/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
   </head>
   <body> 
     <div class="page home-page"> 
-      <div class="sidebar" id="sidebar">sidebar</div>
+      <div class="sidebar" id="sidebar"> 
+        <div class="logo-area text-center fw-bold">Elzero </div>
+        <ul class="links-area list-unstyled"> 
+          <li><a class="text-decoration-none" href="#">Homepaage </a></li>
+          <li> <a class="text-decoration-none" href="#toggle-submenue" data-bs-toggle="collapse" data-target="#toggle-submenue">
+               Forms <i class="fa fa-angle-right toggle-submenue-icon" id="toggle-submenue-icon"></i></a>
+            <ul class="child-links list-unstyled collapse" id="toggle-submenue">
+              <li><a class="text-decoration-none" href="#">Input  </a></li>
+              <li><a class="text-decoration-none" href="#">Textaarea </a></li>
+              <li><a class="text-decoration-none" href="#">Radio </a></li>
+              <li><a class="text-decoration-none" href="#">Checkbox </a></li>
+            </ul>
+          </li>
+          <li> <a class="text-decoration-none" href="#toggle-submenue-misc" data-bs-toggle="collapse" data-target="#toggle-submenue-misc">
+               Misc<i class="fa fa-angle-right toggle-submenue-icon" id="toggle-misc"></i></a>
+            <ul class="child-links list-unstyled collapse" id="toggle-submenue-misc">   
+              <li><a class="text-decoration-none" href="#">Loading  </a></li>
+              <li><a class="text-decoration-none" href="#">Breadcrumbs     </a></li>
+            </ul>
+          </li>
+          <li> <a class="text-decoration-none" href="#">Charts      </a></li>
+        </ul>
+      </div>
       <div class="content-area" id="content-area">
-        <div class="header"><i class="fa fa-exchange fa-lg toggle-sidebar" id="toggle-sidebar"></i></div>
-        <div class="content">   
-          <h1>Homepage</h1>
+        <div class="header"><i class="fa fa-exchange fa-lg toggle-sidebar" id="toggle-sidebar"></i>
+          <div class="dropdown notification-container d-inline-block"><i class="fa fa-bell fa-lg btn btn-secondary dropdown-toggle" id="notifications" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</i>
+            <ul class="dropdown-menu" id="notifications">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="content">
+            <div class="page-head">
+              <h1 class="page-title">Homepage</h1>
+              <p class="page-description lead">This Is Description Homepage</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <script src="/dist/js/main.js"></script>
     <script src="/dist/js/jquery.min.js"></script>
+    <script src="/dist/js/bootstrap.min.js"></script>
+    <script src="/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

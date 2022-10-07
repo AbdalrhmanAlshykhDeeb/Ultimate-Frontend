@@ -1,2 +1,13 @@
 .header
    i.fa.fa-exchange.fa-lg.toggle-sidebar#toggle-sidebar
+   .dropdown.notification-container.d-inline-block
+      i.fa.fa-bell.fa-lg#notifications.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+         | Dropdown button
+      ul.dropdown-menu#notifications
+         li
+            a.dropdown-item(href='#') Action
+         li
+            a.dropdown-item(href='#') Another action
+         li
+            a.dropdown-item(href='#') Something else here
+   

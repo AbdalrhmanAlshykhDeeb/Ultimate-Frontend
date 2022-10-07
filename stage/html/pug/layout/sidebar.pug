@@ -1,1 +1,22 @@
-.sidebar#sidebar sidebar
+.sidebar#sidebar 
+   .logo-area.text-center.fw-bold Elzero 
+   ul.links-area.list-unstyled 
+      li: a(href="#" class="text-decoration-none") Homepaage 
+      li 
+         a(href="#toggle-submenue" class="text-decoration-none" data-bs-toggle="collapse" data-target="#toggle-submenue") 
+            | Forms 
+            i.fa.fa-angle-right#toggle-submenue-icon.toggle-submenue-icon
+         ul.child-links.list-unstyled.collapse#toggle-submenue
+            li: a(href="#" class="text-decoration-none") Input  
+            li: a(href="#" class="text-decoration-none") Textaarea 
+            li: a(href="#" class="text-decoration-none") Radio 
+            li: a(href="#" class="text-decoration-none") Checkbox 
+      li 
+         a(href="#toggle-submenue-misc" class="text-decoration-none" data-bs-toggle="collapse" data-target="#toggle-submenue-misc") 
+            | Misc
+            i.fa.fa-angle-right.toggle-submenue-icon#toggle-misc
+         ul.child-links.list-unstyled.collapse#toggle-submenue-misc    
+            li: a(href="#" class="text-decoration-none") Loading  
+            li: a(href="#" class="text-decoration-none") Breadcrumbs     
+      li 
+         a(href="#" class="text-decoration-none") Charts      

@@ -21,6 +21,7 @@
   "author": "Abdalrhman Alshykh Deeb",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.2.2",
     "pug": "^3.0.2",
     "sass": "^1.55.0",
     "static-server": "^2.2.1"
