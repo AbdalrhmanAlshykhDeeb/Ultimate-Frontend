@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="/dist/css/main.css">
-    <link rel="stylesheet" href="/dist/css/all.min.css">
-    <link rel="stylesheet" href="/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
@@ -39,13 +38,23 @@
       </div>
       <div class="content-area" id="content-area">
         <div class="header"><i class="fa fa-exchange fa-lg toggle-sidebar" id="toggle-sidebar"></i>
-          <div class="dropdown notification-container d-inline-block"><i class="fa fa-bell fa-lg btn btn-secondary dropdown-toggle" id="notifications" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</i>
-            <ul class="dropdown-menu" id="notifications">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+          <div class="dropdown notification-container d-inline-block"><i class="fa fa-bell fa-lg toggle d-inline" id="notifications" data-bs-toggle="dropdown" aria-expanded="false"></i>
+            <div class="dropdown-menu" aria-labelledby="notifications">
+              <div class="noti-head">
+                 Notification <span>50</span></div>
+              <div class="noti-content"> 
+                <ul class="list-unstyled m-0">
+                  <li><i class="fa fa-envelope fa-lg"></i>You Got Email From Bla Bla Bla </li>
+                  <li><i class="fa fa-money-bill fa-lg"></i>You Got Money From Bla Bla Bla </li>
+                  <li><i class="fa fa-thumbs-up fa-lg"></i>You Got Email From Bla Bla Bla </li>
+                  <li><i class="fa fa-envelope fa-lg"></i>You Got Email From Bla Bla Bla </li>
+                  <li class="pb-0"><i class="fa fa-money-bill fa-lg"></i>You Got Money From Bla Bla Bla </li>
+                </ul>
+              </div>
+              <div class="noti-foot text-center"><a class="text-decoration-none d-block" href="#">View All Notification       </a></div>
+            </div>
           </div>
+          <s></s>
         </div>
         <div class="container-fluid">
           <div class="content">
@@ -57,9 +66,8 @@
         </div>
       </div>
     </div>
-    <script src="/dist/js/main.js"></script>
-    <script src="/dist/js/jquery.min.js"></script>
-    <script src="/dist/js/bootstrap.min.js"></script>
-    <script src="/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

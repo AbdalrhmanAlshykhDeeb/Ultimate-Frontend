@@ -12211,6 +12211,8 @@ body {
 .page .sidebar .links-area > li > a {
   position: relative;
   color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .page .sidebar .links-area > li > a:hover {
   padding-left: 25px;
@@ -12275,5 +12277,65 @@ body {
 }
 .header i.toggle-sidebar {
   cursor: pointer;
+}
+
+.notification-container {
+  color: #555;
+  -webkit-margin-start: 1.25rem;
+          margin-inline-start: 1.25rem;
+}
+.notification-container i.toggle {
+  cursor: pointer;
+  padding: 0.625rem;
+  background-color: rgba(249, 249, 249, 0.9764705882);
+  border-radius: 50%;
+}
+.notification-container .dropdown-menu {
+  min-width: 37.5rem;
+  border: unset;
+  top: 0.625rem !important;
+  padding: 0;
+  -webkit-box-shadow: 0 0 10px #ddd;
+          box-shadow: 0 0 10px #ddd;
+}
+.notification-container .dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -1.25rem;
+  left: 0.563rem;
+  border-style: solid;
+  border-width: 0.625rem;
+  border-color: transparent transparent #333 transparent;
+}
+.notification-container .dropdown-menu .noti-head,
+.notification-container .dropdown-menu .noti-content {
+  padding: 0.975rem;
+}
+.notification-container .dropdown-menu .noti-head {
+  background-color: #333;
+  color: white;
+}
+.notification-container .dropdown-menu .noti-head span {
+  float: right;
+}
+.notification-container .dropdown-menu .noti-content ul li {
+  padding: 0.625rem;
+}
+.notification-container .dropdown-menu .noti-content ul li i {
+  background-color: #eee;
+  padding: 0.625rem;
+  width: 2.813rem;
+  height: 2.813rem;
+  line-height: 1.625rem;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-margin-end: 0.625rem;
+          margin-inline-end: 0.625rem;
+  position: relative;
+  top: -0.125rem;
+}
+.notification-container .dropdown-menu .noti-foot a {
+  border-top: 1px solid #eee;
+  padding: 0.625rem;
 }
 /*# sourceMappingURL=main.css.map */
