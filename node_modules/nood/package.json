@@ -1,0 +1,26 @@
+{
+  "name": "nood",
+  "version": "1.0.0",
+  "description": "0.0.1",
+  "main": "lib/main.coffee",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/withinsea/nood.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Mo Chen <withinsea@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/withinsea/nood/issues"
+  },
+  "homepage": "https://github.com/withinsea/nood#readme",
+  "dependencies": {
+    "as-this": "^1.2.1",
+    "co": "^4.6.0",
+    "coffee-script": "^1.10.0",
+    "lodash": "^3.10.1",
+    "require-dir": "^0.3.0"
+  }
+}

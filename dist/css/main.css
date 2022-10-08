@@ -12275,22 +12275,20 @@ body {
   background-color: white;
   padding: 15px;
 }
-.header i.toggle-sidebar {
-  cursor: pointer;
-}
-
-.notification-container {
-  color: #555;
-  -webkit-margin-start: 1.25rem;
-          margin-inline-start: 1.25rem;
-}
-.notification-container i.toggle {
+.header .header-icon {
   cursor: pointer;
   padding: 0.625rem;
   background-color: rgba(249, 249, 249, 0.9764705882);
   border-radius: 50%;
+  color: #555;
+  -webkit-margin-start: 1.25rem;
+          margin-inline-start: 1.25rem;
+  display: inline;
 }
-.notification-container .dropdown-menu {
+.header i.toggle-sidebar {
+  cursor: pointer;
+}
+.header .notification-container .dropdown-menu {
   min-width: 37.5rem;
   border: unset;
   top: 0.625rem !important;
@@ -12298,7 +12296,7 @@ body {
   -webkit-box-shadow: 0 0 10px #ddd;
           box-shadow: 0 0 10px #ddd;
 }
-.notification-container .dropdown-menu::before {
+.header .notification-container .dropdown-menu::before {
   content: "";
   position: absolute;
   top: -1.25rem;
@@ -12307,21 +12305,21 @@ body {
   border-width: 0.625rem;
   border-color: transparent transparent #333 transparent;
 }
-.notification-container .dropdown-menu .noti-head,
-.notification-container .dropdown-menu .noti-content {
+.header .notification-container .dropdown-menu .noti-head,
+.header .notification-container .dropdown-menu .noti-content {
   padding: 0.975rem;
 }
-.notification-container .dropdown-menu .noti-head {
+.header .notification-container .dropdown-menu .noti-head {
   background-color: #333;
   color: white;
 }
-.notification-container .dropdown-menu .noti-head span {
+.header .notification-container .dropdown-menu .noti-head span {
   float: right;
 }
-.notification-container .dropdown-menu .noti-content ul li {
+.header .notification-container .dropdown-menu .noti-content ul li {
   padding: 0.625rem;
 }
-.notification-container .dropdown-menu .noti-content ul li i {
+.header .notification-container .dropdown-menu .noti-content ul li i {
   background-color: #eee;
   padding: 0.625rem;
   width: 2.813rem;
@@ -12334,7 +12332,7 @@ body {
   position: relative;
   top: -0.125rem;
 }
-.notification-container .dropdown-menu .noti-foot a {
+.header .notification-container .dropdown-menu .noti-foot a {
   border-top: 1px solid #eee;
   padding: 0.625rem;
 }
