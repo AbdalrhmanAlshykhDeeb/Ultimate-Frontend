@@ -12273,7 +12273,7 @@ body {
 
 .header {
   background-color: white;
-  padding: 15px;
+  padding: 0.9rem;
 }
 .header .header-icon {
   cursor: pointer;
@@ -12335,5 +12335,65 @@ body {
 .header .notification-container .dropdown-menu .noti-foot a {
   border-top: 1px solid #eee;
   padding: 0.625rem;
+}
+.header .usermenu-container {
+  float: right;
+}
+.header .usermenu-container .username {
+  cursor: pointer;
+}
+.header .usermenu-container .username .avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.header .usermenu-container .username .user {
+  font-weight: bold;
+  color: #777;
+  margin: 0 10px;
+  display: inline-block;
+}
+.header .usermenu-container .dropdown-menu {
+  min-width: 37.5rem;
+  border: unset;
+  top: 0.625rem !important;
+  padding: 1.25rem;
+  border: 1px solid #ddd;
+  border-radius: 0;
+}
+.header .usermenu-container .dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -1.25rem;
+  right: 0;
+  border-style: solid;
+  border-width: 0.625rem;
+  border-color: transparent transparent #ddd transparent;
+}
+.header .usermenu-container .dropdown-menu .user-info h3, .header .usermenu-container .dropdown-menu .user-info .h3 {
+  color: #2980b9;
+}
+.header .usermenu-container .dropdown-menu .user-info p {
+  color: #888;
+}
+.header .usermenu-container .dropdown-menu .activities li {
+  padding: 0.625rem;
+}
+.header .usermenu-container .dropdown-menu .links-box {
+  padding: 0.625rem 0.938rem;
+  border: 1px solid #f3f3f3;
+  background-color: white;
+  border-radius: 0.375rem;
+}
+.header .usermenu-container .dropdown-menu .links-box i.fa-gear {
+  color: #2980b9;
+}
+.header .usermenu-container .dropdown-menu .links-box i.fa-user {
+  color: #16a085;
+}
+.header .usermenu-container .dropdown-menu .links-box i.fa-power-off {
+  color: #c0392b;
+}
+.header .usermenu-container .dropdown-menu .links-box a {
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */

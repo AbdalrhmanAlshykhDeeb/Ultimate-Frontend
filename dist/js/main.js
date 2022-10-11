@@ -47,7 +47,7 @@ function openFullscreen() {
 /* Close fullscreen */
 function closeFullscreen() {
   if (document.exitFullscreen) {
-    document.exitFullscreen();
+    document.exitFullscreen;
   } else if (document.webkitExitFullscreen) {
     /* Safari */
     document.webkitExitFullscreen();

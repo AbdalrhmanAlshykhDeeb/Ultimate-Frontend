@@ -1,27 +1,58 @@
-.header
-   i.fa.fa-exchange.fa-lg.toggle-sidebar#toggle-sidebar
-   .dropdown.notification-container.d-inline-block
-      i.fa.fa-bell.fa-lg.header-icon.toggle.d-inline#notifications(data-bs-toggle='dropdown' aria-expanded='false')
-      .dropdown-menu(aria-labelledby="notifications")
-         .noti-head 
-            | Notification 
-            span 50
-         .noti-content 
-            ul.list-unstyled.m-0
-               li
-                  i.fa.fa-envelope.fa-lg
-                  | You Got Email From Bla Bla Bla 
-               li
-                  i.fa.fa-money-bill.fa-lg
-                  | You Got Money From Bla Bla Bla 
-               li
-                  i.fa.fa-thumbs-up.fa-lg
-                  | You Got Email From Bla Bla Bla 
-               li
-                  i.fa.fa-envelope.fa-lg
-                  | You Got Email From Bla Bla Bla 
-               li.pb-0
-                  i.fa.fa-money-bill.fa-lg
-                  | You Got Money From Bla Bla Bla 
-         .noti-foot.text-center: a(href="#" class="text-decoration-none d-block") View All Notification       
-   i.fa.fa-expand.fa-lg#toggle-fullscreen.header-icon
+.header.d-flex.justify-content-between.align-items-center
+   .icon-header 
+      i.fa.fa-exchange.fa-lg.toggle-sidebar#toggle-sidebar
+      .dropdown.notification-container.d-inline-block
+         i.fa.fa-bell.fa-lg.header-icon.toggle.d-inline#notifications(data-bs-toggle='dropdown' aria-expanded='false')
+         .dropdown-menu(aria-labelledby="notifications")
+            .noti-head 
+               | Notification 
+               span 50
+            .noti-content 
+               ul.list-unstyled.m-0
+                  li
+                     i.fa.fa-envelope.fa-lg
+                     | You Got Email From Bla Bla Bla 
+                  li
+                     i.fa.fa-money-bill.fa-lg
+                     | You Got Money From Bla Bla Bla 
+                  li
+                     i.fa.fa-thumbs-up.fa-lg
+                     | You Got Email From Bla Bla Bla 
+                  li
+                     i.fa.fa-envelope.fa-lg
+                     | You Got Email From Bla Bla Bla 
+                  li.pb-0
+                     i.fa.fa-money-bill.fa-lg
+                     | You Got Money From Bla Bla Bla 
+            .noti-foot.text-center: a(href="#" class="text-decoration-none d-block") View All Notification       
+      i.fa.fa-expand.fa-lg#toggle-fullscreen.header-icon
+   .dropdown.usermenu-container
+      .toggle.d-inline#notifications
+      .username#usermenu(data-bs-toggle='dropdown' aria-expanded='false')
+         img(src="images/avatar.jpg", class="avatar img-fluid rounded-circle" alt="")
+         span.user Osaama Elzero 
+         i.fa.fa-angle-down.fa-lg
+      .dropdown-menu(aria-labelledby="usermenu")
+         .user-info
+            h3.fw-bold Osama Elzero 
+            p Premium Member
+         hr 
+         ul.list-unstyled.activities
+            li Added Comment on Post "How To Make Bla Bla Bla"
+            li Created Post on Category "Science"
+            li Created Chart on Charts Page
+            li Added Comment on Post "How To Make Bla Bla Bla Two"
+         hr
+         .row 
+            .col 
+               .links-box.d-flex.justify-content-between.align-items-center
+                  i.fa.fa-gear.fa-fw
+                  a(href="#" class="text-decoration-none") Settings
+            .col 
+              .links-box.d-flex.justify-content-between.align-items-center
+                  i.fa.fa-user.fa-fw
+                  a(href="#" class="text-decoration-none") My Profile  
+            .col 
+               .links-box.d-flex.justify-content-between.align-items-center
+                  i.fa.fa-power-off.fa-fw
+                  a(href="#" class="text-decoration-none") Logout
