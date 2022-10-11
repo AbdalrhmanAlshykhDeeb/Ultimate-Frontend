@@ -12152,6 +12152,18 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.green-theme .className {
+  color: #16a085;
+}
+
+.blue-theme .className {
+  color: #2980b9;
+}
+
+.red-theme .className {
+  color: #c0392b;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -12177,6 +12189,33 @@ body {
 }
 .page .content-area.no-sidebar {
   width: 100%;
+}
+
+.settings-box {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  z-index: 1000;
+  padding: 1.25rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.settings-box.no-setting {
+  right: 0;
+}
+.settings-box .toggle-setting {
+  position: absolute;
+  left: -3.563rem;
+  top: 100px;
+  cursor: pointer;
+  background-color: white;
+  padding: 0.6rem 0.9rem;
+  font-size: 1.4rem;
+  display: block;
+  border-radius: 0.313rem 0 0 0.313rem;
 }
 
 .page .sidebar {
@@ -12283,7 +12322,6 @@ body {
   color: #555;
   -webkit-margin-start: 1.25rem;
           margin-inline-start: 1.25rem;
-  display: inline;
 }
 .header i.toggle-sidebar {
   cursor: pointer;

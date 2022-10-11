@@ -1,6 +1,8 @@
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 @import "./variables/colors";
-@import "./variables/var.scss";
+@import "./variables/var";
+@import "./options/colors";
 @import "./layout/global";
+@import "./components/settings-box.scss";
 @import "./layout/sidebar";
 @import "./layout/header";

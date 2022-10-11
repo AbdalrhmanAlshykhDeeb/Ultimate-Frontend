@@ -56,3 +56,11 @@ function closeFullscreen() {
     document.msExitFullscreen();
   }
 }
+
+let toggleIcon = document.getElementById("toggle-settings");
+let toggleSettings = document.getElementById("settings-box");
+
+toggleIcon.onclick = () => {
+  toggleSettings.classList.toggle("no-setting");
+  toggleIcon.classList.toggle("fa-spin");
+};
