@@ -1,7 +1,7 @@
 .sidebar#sidebar 
    .logo-area.text-center.fw-bold Elzero 
    ul.links-area.list-unstyled 
-      li: a(href="#" class="text-decoration-none active") Homepaage 
+      li: a(href="homepage.html" class="text-decoration-none" class= pageTitle === 'Homepage' ? 'active' : '') Homepaage 
       li 
          a(href="#toggle-submenue" class="text-decoration-none" data-bs-toggle="collapse" data-target="#toggle-submenue") 
             | Forms 
@@ -19,4 +19,4 @@
             li: a(href="#" class="text-decoration-none") Loading  
             li: a(href="#" class="text-decoration-none") Breadcrumbs     
       li 
-         a(href="#" class="text-decoration-none") Charts      
+         a(href="charts.html" class="text-decoration-none" class= pageTitle === 'Charts' ? 'active' : '') Charts      
