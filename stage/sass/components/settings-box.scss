@@ -48,4 +48,13 @@
       }
     }
   }
+  .font-options {
+    select {
+      text-transform: capitalize;
+      border-color: #f3f3f3;
+      &:focus {
+        border-color: #f3f3f3;
+      }
+    }
+  }
 }

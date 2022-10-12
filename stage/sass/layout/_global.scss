@@ -1,10 +1,22 @@
 * {
   box-sizing: border-box;
+  outline: none;
 }
 
 body {
-  margin: 0;
-  font-family: $fontFamily;
+  font-family: "Open Sans", sans-serif;
+  &.open {
+    font-family: "Open Sans", sans-serif;
+  }
+  &.public {
+    font-family: "Public Sans", sans-serif;
+  }
+  &.roboto {
+    font-family: "Roboto", sans-serif;
+  }
+  &.source {
+    font-family: "Source Sans Pro", sans-serif;
+  }
 }
 
 .page {
@@ -21,12 +33,10 @@ body {
       width: 100%;
     }
   }
-  .page-head{
-    .page-title{
+  .page-head {
+    .page-title {
       font-weight: bold;
-      color:$flatGreen;
+      color: $flatGreen;
     }
   }
 }
-
-
