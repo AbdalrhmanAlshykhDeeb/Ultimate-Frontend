@@ -12152,16 +12152,64 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.green-theme .className {
+.green-theme .page .page-head .page-title {
+  color: #16a085;
+}
+.green-theme .header .icon-header i.toggle-sidebar:hover {
+  color: #16a085;
+}
+.green-theme .header .usermenu-container .dropdown-menu .user-info h3, .green-theme .header .usermenu-container .dropdown-menu .user-info .h3 {
   color: #16a085;
 }
 
-.blue-theme .className {
+.blue-theme .page .page-head .page-title {
+  color: #2980b9;
+}
+.blue-theme .header .icon-header i.toggle-sidebar:hover {
+  color: #2980b9;
+}
+.blue-theme .header .usermenu-container .dropdown-menu .user-info h3, .blue-theme .header .usermenu-container .dropdown-menu .user-info .h3 {
   color: #2980b9;
 }
 
-.red-theme .className {
+.red-theme .page .page-head .page-title {
   color: #c0392b;
+}
+.red-theme .header .icon-header i.toggle-sidebar:hover {
+  color: #c0392b;
+}
+.red-theme .header .usermenu-container .dropdown-menu .user-info h3, .red-theme .header .usermenu-container .dropdown-menu .user-info .h3 {
+  color: #c0392b;
+}
+
+.orange-theme .page .page-head .page-title {
+  color: #d35400;
+}
+.orange-theme .header .icon-header i.toggle-sidebar:hover {
+  color: #d35400;
+}
+.orange-theme .header .usermenu-container .dropdown-menu .user-info h3, .orange-theme .header .usermenu-container .dropdown-menu .user-info .h3 {
+  color: #d35400;
+}
+
+.purple-theme .page .page-head .page-title {
+  color: #8e44ad;
+}
+.purple-theme .header .icon-header i.toggle-sidebar:hover {
+  color: #8e44ad;
+}
+.purple-theme .header .usermenu-container .dropdown-menu .user-info h3, .purple-theme .header .usermenu-container .dropdown-menu .user-info .h3 {
+  color: #8e44ad;
+}
+
+.black-theme .page .page-head .page-title {
+  color: black;
+}
+.black-theme .header .icon-header i.toggle-sidebar:hover {
+  color: black;
+}
+.black-theme .header .usermenu-container .dropdown-menu .user-info h3, .black-theme .header .usermenu-container .dropdown-menu .user-info .h3 {
+  color: black;
 }
 
 * {
@@ -12190,6 +12238,10 @@ body {
 .page .content-area.no-sidebar {
   width: 100%;
 }
+.page .page-head .page-title {
+  font-weight: bold;
+  color: #16a085;
+}
 
 .settings-box {
   position: fixed;
@@ -12206,6 +12258,12 @@ body {
 .settings-box.no-setting {
   right: 0;
 }
+.settings-box .options-title {
+  color: #666;
+  margin-top: 0.625rem;
+  margin-bottom: 0.937rem;
+  font-weight: bold;
+}
 .settings-box .toggle-setting {
   position: absolute;
   left: -3.563rem;
@@ -12216,6 +12274,34 @@ body {
   font-size: 1.4rem;
   display: block;
   border-radius: 0.313rem 0 0 0.313rem;
+}
+.settings-box .color-options ul li:nth-child(1) {
+  background-color: #16a085;
+}
+.settings-box .color-options ul li:nth-child(2) {
+  background-color: #2980b9;
+}
+.settings-box .color-options ul li:nth-child(3) {
+  background-color: #c0392b;
+}
+.settings-box .color-options ul li:nth-child(4) {
+  background-color: #d35400;
+}
+.settings-box .color-options ul li:nth-child(5) {
+  background-color: #8e44ad;
+}
+.settings-box .color-options ul li:nth-child(6) {
+  background-color: black;
+}
+.settings-box .color-options ul li {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.settings-box .color-options ul li.active {
+  opacity: 1;
 }
 
 .page .sidebar {
@@ -12322,9 +12408,16 @@ body {
   color: #555;
   -webkit-margin-start: 1.25rem;
           margin-inline-start: 1.25rem;
+  -webkit-transition: 5s;
+  transition: 5s;
 }
 .header i.toggle-sidebar {
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.header i.toggle-sidebar:hover {
+  color: #16a085;
 }
 .header .notification-container .dropdown-menu {
   min-width: 37.5rem;
@@ -12408,7 +12501,7 @@ body {
   border-color: transparent transparent #ddd transparent;
 }
 .header .usermenu-container .dropdown-menu .user-info h3, .header .usermenu-container .dropdown-menu .user-info .h3 {
-  color: #2980b9;
+  color: #16a085;
 }
 .header .usermenu-container .dropdown-menu .user-info p {
   color: #888;

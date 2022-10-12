@@ -1,19 +1,34 @@
 $themes: (
-    green-theme: (
-        color: $flatGreen
-    ),
-    blue-theme: (
-        color: $flatBlue
-    ),
-    red-theme: (
-        color: $flatRed
-    )
+  green-theme: (
+    color: $flatGreen,
+  ),
+  blue-theme: (
+    color: $flatBlue,
+  ),
+  red-theme: (
+    color: $flatRed,
+  ),
+  orange-theme: (
+    color: $flatOrange,
+  ),
+  purple-theme: (
+    color: $flatPurple,
+  ),
+  black-theme: (
+    color: black,
+  ),
 );
 
 @each $theme, $map in $themes {
-    .#{$theme} {
-        .className{
-            color: map-get($map, color)
-        }
+  .#{$theme} {
+    .page .page-head .page-title {
+      color: map-get($map, color);
     }
-} 
+    .header .icon-header i.toggle-sidebar:hover {
+      color: map-get($map, color);
+    }
+    .header .usermenu-container .dropdown-menu .user-info h3 {
+      color: map-get($map, color);
+    }
+  }
+}

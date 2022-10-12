@@ -1,10 +1,14 @@
 .settings-box#settings-box
     .toggle-setting
         i.fa.fa-gear.fa-lg#toggle-settings
-    .settings-content 
-    .option-box 
-        h4 Color Options
-    .option-box
-        h4 Font Options     
-    .option-box    
-        h4 Sidebar Option
+    .settings-content.text-center
+        .option-box.color-options
+            h4.options-title Color Options
+            - let themes = ["green-theme", "blue-theme", "red-theme", "orange-theme", "purple-theme"]
+            ul.list-unstyled.d-flex.justify-content-center.gap-1
+                each theme in themes
+                    li(data-theme=theme)
+        .option-box
+            h4.options-title Font Options     
+        .option-box    
+            h4.options-title Sidebar Option

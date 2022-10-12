@@ -11,6 +11,12 @@
   &.no-setting {
     right: 0;
   }
+  .options-title {
+    color: #666;
+    margin-top: 0.625rem;
+    margin-bottom: 0.937rem;
+    font-weight: bold;
+  }
   .toggle-setting {
     position: absolute;
     left: -3.563rem;
@@ -21,5 +27,25 @@
     font-size: 1.4rem;
     display: block;
     border-radius: 0.313rem 0 0 0.313rem;
+  }
+  .color-options {
+    ul {
+      $colors: $flatGreen, $flatBlue, $flatRed, $flatOrange, $flatPurple, black;
+      @for $i from 1 through length($colors) {
+        li:nth-child(#{$i}) {
+          background-color: nth($colors, $i);
+        }
+      }
+      li {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        opacity: 0.7;
+        cursor: pointer;
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
   }
 }

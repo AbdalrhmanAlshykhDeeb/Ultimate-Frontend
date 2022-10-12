@@ -23,10 +23,12 @@ let fullScreen = document.getElementById("toggle-fullscreen");
 
 fullScreen.onclick = () => {
   fullScreen.classList.toggle("full-screen");
-  if (fullScreen.toString("full-screen")) {
+  if (fullScreen.classList.toString("full-screen")) {
     openFullscreen();
+    console.log("11111");
   } else {
     closeFullscreen();
+    console.log("0000000000");
   }
 };
 
@@ -64,3 +66,14 @@ toggleIcon.onclick = () => {
   toggleSettings.classList.toggle("no-setting");
   toggleIcon.classList.toggle("fa-spin");
 };
+
+var themesClasses = [];
+$(".color-options li").each(function () {
+  themesClasses.push($(this).data("theme"));
+});
+$(".color-options li").on("click", function () {
+  $(this).addClass("active").siblings().removeClass("active");
+  $("body")
+    .removeClass(themesClasses.join(" "))
+    .addClass($(this).data("theme"));
+});
