@@ -21,14 +21,15 @@ $themes: (
 
 @each $theme, $map in $themes {
   .#{$theme} {
+    $color: map-get($map, color);
     .page .page-head .page-title {
-      color: map-get($map, color);
+      color: $color;
     }
     .header .icon-header i.toggle-sidebar:hover {
-      color: map-get($map, color);
+      color: $color;
     }
     .header .usermenu-container .dropdown-menu .user-info h3 {
-      color: map-get($map, color);
+      color: $color;
     }
   }
 }

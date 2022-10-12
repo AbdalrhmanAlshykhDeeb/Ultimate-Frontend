@@ -23,12 +23,11 @@ let fullScreen = document.getElementById("toggle-fullscreen");
 
 fullScreen.onclick = () => {
   fullScreen.classList.toggle("full-screen");
-  if (fullScreen.classList.toString("full-screen")) {
+  console.log(fullScreen.classList.value);
+  if (fullScreen.classList.value.includes("full-screen")) {
     openFullscreen();
-    console.log("11111");
   } else {
     closeFullscreen();
-    console.log("0000000000");
   }
 };
 
@@ -48,8 +47,9 @@ function openFullscreen() {
 
 /* Close fullscreen */
 function closeFullscreen() {
+  console.log(document);
   if (document.exitFullscreen) {
-    document.exitFullscreen;
+    document.exitFullscreen();
   } else if (document.webkitExitFullscreen) {
     /* Safari */
     document.webkitExitFullscreen();

@@ -35,6 +35,9 @@
         &:hover {
           padding-left: 25px;
         }
+        &.active::before {
+          border-color: #ffc107;
+        }
         &::before {
           content: "";
           position: absolute;
